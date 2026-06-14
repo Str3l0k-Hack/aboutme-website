@@ -1,0 +1,246 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    text-align: center;
+}
+
+.safehousebg {
+        width: 100vw;
+        height: 100vh;
+        
+        background-image:  url("images/Safehouse.png");
+        background-size: cover;
+        background-attachment: fixed;
+
+}
+
+.indexbg {
+        width: 100vw;
+        height: 100vh;
+        
+        background-image:  url("images/auction.png");
+        background-size: cover;
+        background-attachment: fixed;
+
+}
+
+.stereobg{
+    width: 100vw;
+    height: 100vh;
+
+    background-image:  url("images/stereo.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.music-player {
+    width: 500px;
+    
+
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid #4b4b4b;
+    border-radius: 3px;
+   
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+audio {
+    width: 100%; /* Make the audio controls fill the container */
+}
+
+
+.auctionlinks{
+
+font-family: sans-serif;
+
+
+}
+
+.lastfm{
+
+    text-align: right;
+    margin-right: 15%;
+    float: right;
+
+}
+
+.steam{
+
+    text-align: right;
+    margin-right: 10px;
+    float: right;
+
+}
+
+
+
+.safehousemain{
+
+    border: #919191 solid 1px;
+    border-radius: 12px;
+    padding: 5px;
+
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: RGBA(75, 75, 75, 0.5);
+
+    
+
+
+}
+
+
+.roomtitle{
+
+text-align: center;
+margin-left: 19%; 
+color: white;
+
+}
+
+
+.leavelink{
+
+float: right;
+margin-right: 40%;
+margin-top: 7px;
+
+}
+
+.musiclink{
+
+float: left;
+margin-left: 40%;
+margin-top: 7px;
+
+}
+
+.safehouselink{
+
+float: left;
+margin-left: 40%;
+margin-top: 7px;
+
+}
+
+
+.Title{
+
+color: white;
+
+
+}
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(181, 154, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.songcover1{
+
+    display: inline-block;
+
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.songtext1{
+
+    margin-left: 2.5%;
+
+}
+
+.songcover2{
+
+    display: inline-block;
+
+ 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.songtext2{
+
+    margin-left: 2.5%;
+
+}
+
+.songcover3{
+
+    display: inline-block;
+    
+    
+  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+        
+
+}
+
+.songtext3{
+
+    margin-left: 2.5%;
+
+}
+
+.songlist{
+
+    display: flex;
+    gap: 14%;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+
+}
+
+.disclaimer{
+
+    color: white;
+
+
+}
+
+h1{
+
+    color: white;
+
+}
