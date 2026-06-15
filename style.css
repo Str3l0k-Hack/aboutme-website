@@ -1,246 +1,208 @@
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 
     margin: 0;
     padding: 0;
 
     background-color: black;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .safehousebg {
-        width: 100vw;
-        height: 100vh;
-        
-        background-image:  url("images/Safehouse.png");
-        background-size: cover;
-        background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
 
+    background-image: url("images/Safehouse.png");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .indexbg {
-        width: 100vw;
-        height: 100vh;
-        
-        background-image:  url("images/auction.png");
-        background-size: cover;
-        background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
 
-}
-
-.stereobg{
-    width: 100vw;
-    height: 100vh;
-
-    background-image:  url("images/stereo.png");
+    background-image: url("images/auction.png");
     background-size: cover;
     background-attachment: fixed;
+}
 
+.stereobg {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("images/stereo.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* iOS doesn't support background-attachment: fixed */
+@media (max-width: 768px) {
+    .safehousebg,
+    .indexbg,
+    .stereobg {
+        background-attachment: scroll;
+    }
 }
 
 
 .music-player {
-    width: 500px;
-    
+    max-width: 500px;
+    width: 90%;
 
     margin: 20px auto;
     padding: 5px;
     border: 1px solid #4b4b4b;
     border-radius: 3px;
-   
+
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 
 audio {
-    width: 100%; /* Make the audio controls fill the container */
+    width: 100%;
 }
 
 
-.auctionlinks{
-
-font-family: sans-serif;
-
-
+.auctionlinks {
+    font-family: sans-serif;
 }
 
-.lastfm{
-
-    text-align: right;
-    margin-right: 15%;
-    float: right;
-
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
 }
 
-.steam{
+.lastfm,
+.steam {
+    line-height: 0;
+}
 
-    text-align: right;
-    margin-right: 10px;
-    float: right;
-
+.lastfm img,
+.steam img {
+    width: 50px;
+    height: 50px;
 }
 
 
-
-.safehousemain{
-
+.safehousemain {
     border: #919191 solid 1px;
     border-radius: 12px;
-    padding: 5px;
+    padding: 10px 20px;
 
-    margin-top: 2%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 2% auto;
+    max-width: 600px;
+    width: 90%;
 
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: RGBA(75, 75, 75, 0.5);
-
-    
-
-
+    box-sizing: border-box;
 }
 
 
-.roomtitle{
+.roomtitle {
+    text-align: center;
+    color: white;
+}
 
-text-align: center;
-margin-left: 19%; 
-color: white;
+.page-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    padding: 10px 5%;
+    margin-top: 20px;
+    clear: both;
+}
 
+.leavelink,
+.musiclink,
+.safehouselink {
+    margin: 0;
 }
 
 
-.leavelink{
-
-float: right;
-margin-right: 40%;
-margin-top: 7px;
-
+.Title {
+    color: white;
 }
 
-.musiclink{
-
-float: left;
-margin-left: 40%;
-margin-top: 7px;
-
-}
-
-.safehouselink{
-
-float: left;
-margin-left: 40%;
-margin-top: 7px;
-
-}
-
-
-.Title{
-
-color: white;
-
-
+.index-cta {
+    margin-top: 10%;
+    padding-bottom: 40px;
+    font-size: 1.1em;
 }
 
 
 a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:visited {
-  color: rgb(181, 154, 255);
-  background-color: transparent;
-  text-decoration: none;
+    color: rgb(181, 154, 255);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 
-.songcover1{
-
+.songcover1,
+.songcover2,
+.songcover3 {
     display: inline-block;
-
-
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+    max-width: 300px;
+    width: 100%;
 }
 
-.songtext1{
+.songcover1 img,
+.songcover2 img,
+.songcover3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.songtext1,
+.songtext2,
+.songtext3 {
     margin-left: 2.5%;
-
 }
 
-.songcover2{
-
-    display: inline-block;
-
- 
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-.songtext2{
-
-    margin-left: 2.5%;
-
-}
-
-.songcover3{
-
-    display: inline-block;
-    
-    
-  
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-        
-
-}
-
-.songtext3{
-
-    margin-left: 2.5%;
-
-}
-
-.songlist{
-
+.songlist {
     display: flex;
-    gap: 14%;
+    flex-wrap: wrap;
+    gap: 5%;
     justify-content: center;
-    align-items: center;
-    margin: 1%;
-
+    align-items: flex-start;
+    margin: 1% 2%;
 }
 
-.disclaimer{
-
+.disclaimer {
     color: white;
-
-
 }
 
-h1{
-
+h1 {
     color: white;
-
 }
